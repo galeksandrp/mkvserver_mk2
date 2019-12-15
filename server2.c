@@ -432,7 +432,7 @@ int main(int argc, char *argv[])
     AVFormatContext *ifmt_ctx = NULL;
 
     rinfo.in_filename = "pipe:0";
-    ainfo.out_uri = "http://0:8080";
+    ainfo.out_uri = "http://0.0.0.0:8080";
     if (argc > 1) {
         rinfo.in_filename = argv[1];
     }
